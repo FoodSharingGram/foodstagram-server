@@ -6,10 +6,12 @@ const imageSchema = new Schema ({
         type: Schema.Types.ObjectId,
         ref: 'User'
     },
+    description: String,
     title: String,
     url: String,
     tags: [],
-    comments: [ { type: Schema.Types.ObjectId, ref: 'User' } ]
+    comments: [ { type: Schema.Types.ObjectId, ref: 'User' } ],
+    date: String
 })
 
 const Image = mongoose.model('Image', imageSchema)
