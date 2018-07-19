@@ -1,4 +1,3 @@
-require("dotenv").config();
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -7,9 +6,12 @@ var logger = require('morgan');
 const mongoose = require('mongoose');
 const cors = require("cors");
 
+require('dotenv').config();
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var foodsRouter = require('./routes/foods')
+
 
 mongoose.connect(`mongodb://adminfgram:treasure20@ds141434.mlab.com:41434/foodstagram`)
 
