@@ -26,19 +26,7 @@ const imgDetail = (req, res, next) => {
 }
 
 const getImage = (req, res, next) => {
-
-    res.send("Still cant get Image, yet.")
-
-    // const uuid = req.decoded._id
-    //
-    // if (!uuid) {
-    //     res.send({
-    //         error: "No authorization key!"
-    //     })
-    // }
-
-    // get image method
-    // populateHandler(req, res, next)
+    populateHandler(req, res, next)
 }
 
 module.exports = { imgDetail, getImage }
