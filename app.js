@@ -11,7 +11,7 @@ require('dotenv').config();
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var foodsRouter = require('./routes/foods')
-
+var zomatoRouter = require('./routes/zomato')
 
 mongoose.connect(`mongodb://adminfgram:treasure20@ds141434.mlab.com:41434/foodstagram`)
 
@@ -31,7 +31,8 @@ app.use(cors())
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/foods',foodsRouter)
+app.use('/foods',foodsRouter);
+app.use('/api',zomatoRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
