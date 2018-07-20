@@ -12,6 +12,6 @@ router.get('/', (req, res) => {
 //  test case all middlewares and creating image object in imgdetail
 router.post('/image', auth, img.multer.single('file'), img.sendUploadToGCS, imgDetail)
 
-router.get('/image', auth, getImage)
+router.get('/image', getImage)
 
 module.exports = router;
