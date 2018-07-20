@@ -8,7 +8,7 @@ class ZomatoController{
       let q = req.headers.title //Get image title as search values (eg: nasi goreng);
       let userId = req.decoded._id
       let lat, long;
-      //Get lat and long from user 
+      //Get lat and long from user
       User.findById(userId)
       .then(function(user){
          lat = user.lat;
