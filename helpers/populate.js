@@ -14,4 +14,4 @@ const populateHandler = (req, res, next) => {
     })
 }
 
-module.exports = populateHandler
+module.exports = { populateHandler }
