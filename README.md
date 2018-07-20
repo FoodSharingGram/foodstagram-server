@@ -45,27 +45,51 @@ ROUTE  |  HTTP  | Description
 ### List of USERS routes:
 
 ROUTE  |  HTTP  | Description | Body | Header | Result
--------|--------|-------------|------|-------
+-------|--------|-------------|------|--------|---------
 /register | POST | Creating new user | username, email, password, city | - | Success or error message
 /login | POST | Login into user account | email, password | user, token or error message
 /update | POST | Updating user account | username, email, password, city | - | Updated data or error message
 /findUser | GET | Get a user account | - | id | user data or error message
 
+### List of FOODS routes:
+
+ROUTE  |  HTTP  | Description | Body | Header | Result
+-------|--------|-------------|------|--------|---------
+/image | GET | Get all images with populated user | - | - | JSON type all images
+/image | POST | Post an image to Foodstagram | user, title, description, tags[], image file | token | JSON type image uploaded
+
+
+### List of FOODS routes:
+
+ROUTE  |  HTTP  | Description | Body | Header | Result
+-------|--------|-------------|------|--------|---------
+/search | GET | Get foods in zomato api | - | food title | JSON type searched foods
+/reviews | GET | Get reviews from zomato | - | user id | JSON type food review
+
 ## Built With
 
-*
-*
-*
+* Vue
+* Google Cloud Server
+* Google Cloud Platform
+* mLab
+* MongoDB with mLab
+* Express
+* NodeJS
+* Axios
+* MomentJS
+* BcryptJS
+* JWT
+* Multer
 
 ## Authors
 
-* **Arief** [PurpleBooth](https://github.com/PurpleBooth)
+* **Arief** [Github](https://github.com/ariefardi)
 
-* **Tushar** [PurpleBooth](https://github.com/PurpleBooth)
+* **Tushar** [Github](https://github.com/TushBedi)
 
-* **Rin** [PurpleBooth](https://github.com/PurpleBooth)
+* **Rin** [Github](https://github.com/Rin-ng)
 
-* **Haddawi** [PurpleBooth](https://github.com/PurpleBooth)
+* **Haddawi** [Github](https://github.com/dawimuhammad)
 
 ## License
 
