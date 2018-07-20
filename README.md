@@ -57,9 +57,11 @@ ROUTE  |  HTTP  | Description | Body | Header | Result
 -------|--------|-------------|------|--------|---------
 /image | GET | Get all images with populated user | - | - | JSON type all images
 /image | POST | Post an image to Foodstagram | user, title, description, tags[], image file | token | JSON type image uploaded
+/image/userID | GET | Get all images posted by User | - | - | Images posted by user
+/image/del/imageId | DELETE | Delete an image posted by User | - | - | Deleted image
 
 
-### List of FOODS routes:
+### List of ZOOMATO routes:
 
 ROUTE  |  HTTP  | Description | Body | Header | Result
 -------|--------|-------------|------|--------|---------
